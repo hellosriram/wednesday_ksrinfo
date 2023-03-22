@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orphanagehome">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_nnhtoiod.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+    <Button
+        android:id="@+id/orphanages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Orphanages around you"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/reg_orphanage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orphanages"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/mailid"
+        android:padding="4dp"
+        android:text="Register your orphanage"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hospitalhome">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:lottie_url="https://assets8.lottiefiles.com/packages/lf20_zpjfsp1e.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <Button
+        android:id="@+id/hospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Hospitals around you"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hospitals"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/mailid"
+        android:padding="4dp"
+        android:text="Book an Appointment"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+
+</RelativeLayout>

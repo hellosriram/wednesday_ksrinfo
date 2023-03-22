@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_url="https://assets5.lottiefiles.com/packages/lf20_2h7yicxc.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+
+
+
+            <EditText
+                android:id="@+id/stall_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animationView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/forget"
+                android:drawableStart="@drawable/email"
+                android:hint="Enter Email ..."
+                android:inputType="textEmailAddress"
+                android:padding="4dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/stall_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stall_email"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/forget"
+                android:drawableStart="@drawable/orphanage"
+                android:hint="Name of stall/store"
+                android:inputType="text"
+                android:padding="4dp">
+
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stall_name"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:padding="4dp"
+                android:text="Locality: Chennai"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/stall_offer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/locality"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/forget"
+                android:hint="What is Offer?"
+                android:inputType="text"
+                android:padding="4dp">
+
+            </EditText>
+            <Button
+                android:id="@+id/reg_offers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stall_offer"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/button"
+                android:padding="4dp"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/needanewAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_offers"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:padding="4dp"
+                android:text="Currently we are accepting only stalls/stores located within chennai."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
